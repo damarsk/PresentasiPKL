@@ -1,10 +1,21 @@
-## Ini khusus menggunakan PostMan | Untuk Integration Test
+# Panduan Menggunakan Postman untuk Integration Test
 
-# Langkah - Langkah Impor Test Case ke Postman:
-# 1. Buka Postman
-# 2. Klik ikon Import di pojok kiri atas Postman
-# 3. Di jendela Import, Anda memiliki beberapa opsi:
-#    File: Pilih ini jika Anda ingin mengimpor file JSON
-#    Folder: Pilih ini jika Anda ingin mengimpor seluruh folder yang berisi file-file JSON
-#    Link: Pilih ini jika Anda memiliki URL yang langsung mengarahkan ke file JSON yang ingin 
-diimpor
+Dokumen ini memberikan langkah-langkah untuk mengimpor test case ke dalam Postman untuk melakukan pengujian integrasi.
+
+## Langkah-Langkah Impor Test Case ke Postman
+
+1. **Buka Postman**
+   
+2. **Klik Ikon Import**
+   - Klik ikon **Import** yang terletak di pojok kiri atas aplikasi Postman.
+
+3. **Pilih Opsi Impor**
+   Setelah mengklik ikon Import, Anda akan diberikan beberapa opsi untuk mengimpor test case:
+   
+   - **File**: Pilih opsi ini jika Anda ingin mengimpor file JSON.
+   - **Folder**: Pilih opsi ini jika Anda ingin mengimpor seluruh folder yang berisi file-file JSON.
+   - **Link**: Pilih opsi ini jika Anda memiliki URL yang langsung mengarah ke file JSON yang ingin diimpor.
+   
+---
+
+Dengan mengikuti langkah-langkah di atas, Anda dapat dengan mudah mengimpor test case ke Postman dan mulai melakukan pengujian integrasi.
