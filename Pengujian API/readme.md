@@ -17,5 +17,5 @@ Dokumen ini memberikan langkah-langkah untuk mengimpor test case ke dalam Postma
    - **Link**: Pilih opsi ini jika Anda memiliki URL yang langsung mengarah ke file JSON yang ingin diimpor.
    
 ---
-
+#Note : Integration Test ini menggunakan API Demo yang disediakan oleh Swagger UI ( [EsquelaJS](https://api.escuelajs.co/docs#/products/ProductsController_update) )
 Dengan mengikuti langkah-langkah di atas, Anda dapat dengan mudah mengimpor test case ke Postman dan mulai melakukan pengujian integrasi.
