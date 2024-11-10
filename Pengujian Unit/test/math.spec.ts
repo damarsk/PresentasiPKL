@@ -11,7 +11,8 @@ describe('Math functions', () => {
         });
     
         it('add should throw an error if inputs are not valid numbers', () => {
-            expect(() => math.add(NaN, NaN)).toThrow('Input must be a valid number');
+            const result = () => math.add(1, '2' as any);
+            expect(result).toThrow('Both arguments must be numbers');
         });
     });
 
@@ -34,16 +35,10 @@ describe('Math functions', () => {
             expect(math.multi(-2, 3)).toBe(-6);
         });
 
-        it('multi should return the product of two arrays', () => {
-            expect(math.multi([1, 2, 3], [4, 5, 6])).toEqual([4, 10, 18]);
-            expect(math.multi([1, 2], [3, 4, 5])).toEqual([3, 8]);
-            expect(math.multi([1, 2, 3], [0, 0, 0])).toEqual([0, 0, 0]);
-        });
-
         it('multi should throw an error if inputs are not valid', () => {
-            expect(() => math.multi('2' as any, 3)).toThrow('Invalid input types');
-            expect(() => math.multi(2, [3] as any)).toThrow('Invalid input types');
-            expect(() => math.multi([2] as any, '3' as any)).toThrow('Invalid input types');
+            expect(() => math.multi('2' as any, 3)).toThrow('Both arguments must be numbers');
+            expect(() => math.multi(2, [3] as any)).toThrow('Both arguments must be numbers');
+            expect(() => math.multi([2] as any, '3' as any)).toThrow('Both arguments must be numbers');
         });
     });
 
@@ -53,6 +48,11 @@ describe('Math functions', () => {
             expect(() => math.divide(2, 0)).toThrow('Cannot divide by zero');
             expect(math.divide(0, 2)).toBe(0);
         });
+
+        it('divide should throw an error if inputs are not valid', () => {
+            const result = () => math.divide('6' as any, 3);
+            expect(result).toThrow('Both arguments must be numbers');
+        })
     });
 
     describe('power (pangkat)', () => {
